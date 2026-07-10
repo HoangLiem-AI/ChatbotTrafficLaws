@@ -1,0 +1,19 @@
+retriever:
+  method: tfidf # tfidf | bm25
+  top_k: 3
+  max_law_chars: 1200
+model:
+  val_size: 0.2
+  seed: 42
+qa_rules:
+  yes_keywords:
+  - được
+  - cho phép
+  - có thể
+  - 'yes'
+  - đúng
+  no_keywords:
+  - không
+  - cấm
+  - 'no'
+  - sai
